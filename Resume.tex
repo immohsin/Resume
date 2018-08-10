@@ -1,0 +1,167 @@
+%-------------------------
+% Author : Mohsin Mumtaz
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Mohsin Mumtaz} & Email : \href{mailto:}{mohsinmumtaz21@gmail.com}\\
+   \href{https://github.com/immohsin}{\underline{Github}} 
+   \href{https://www.linkedin.com/in/mohsin-mumtaz-680915ab}{\underline{LinkedIn}}  
+   \href{https://medium.com/@im_mohsin}{\underline{Medium}} & Mobile : +91 9738226982
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Doselect}{Bangalore}
+      {Software Engineering Intern}{Jan 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Infrastructure tool}
+          {Service to run deployments and metrics generations. Involved in building the tool from scratch and building utilities for effiecient report generation. Implemented asynchronous tasks using celery and RabbitMq.}
+        \resumeItem{RestFul API}
+          {Built API to get solution revisions of the problems used by partner companies, built using tastypie framework. The feature is live and in production.}
+        \resumeItem{Mail Notifications}
+          {Built feature for platform users to receive periodic email notification about users activity.}
+        \resumeItem{User Management API}
+          {Core service for managing the user and user permissions from easy to use dashboard.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Ramaiah Institute Of Technology}{Bangalore,}
+        {Master of Computer Application;  CGPA: 8.35}{July. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Vehicle Tracking System}
+      {Arduino device to track vehicle with complete gps sensors and store location data in google firebase for access through web and mobile app interface.}
+    \resumeSubItem{Github Search}
+      {As part of udacity course, developed data visualization android app of github project repositories and allowing user to search for a list of projects from Github site using the Gihub API.The results are sorted based on the projects that recieved high stars.}
+    \resumeSubItem{Dale}
+      {Android application allowing user to save the contact details of the people they meet in different events. It supports offline saving and export of contacts to local storage in CSV format. The contact is displayed in Business Card style.}
+    \resumeSubItem{Image Management API}
+      {Rest API with GET, POST, PATCH request methods to save and retrieve images from the local file system stored by the API service. Developed using Pythona and Django Rest Framework.}
+    \resumeSubItem{Stock picker webapp}
+      {The website is used to check the prices of stocks, purchase and sell the stocks with virtual currency of 10000 dollars. It shows the real time prices.}
+    \resumeSubItem{Speech Recognition}
+      {A Speech to Text web application developed usin python/django that  performs streaming and non-streaming services.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, C++, Javascript SQL, Java}
+     }
+    \item{
+      \textbf{Technologies}{: AWS, Firebase, Web Development, Android Development, Docker, CircleCi}
+    }
+    \item{
+      \textbf{Libraries and Framework}{: Django, Flask, Celery, 
+      Bootstrap, RabbitMq, Django-tastypie, DRF, mongoengine}
+    }
+  \resumeSubHeadingListEnd
+
+
+
+%-----------Awards & Extra Curricular-----------------
+\section{Awards and Extra Curricular}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Won Bronze medal in week of code Contest}{Hackerrank}
+        {Participated in a online competitive coding contest to solve algorithmic problems.}{April 2017}
+    \resumeSubheading
+        {2nd Place in Payse Hackathon}{Nucleus Software}
+        {Won in college level hackathon sponsored by nucleus software to find loopholes in their payment system.}{March 2017}
+    \resumeSubheading
+        {Top 5 in PESIT Hackathon}{PESIT University}
+        {Android application that shows the dates and details of college fest.}{Febrarury 2017}
+    \resumeSubheading
+        {Open Source Contributor}{}
+        {Contributed to Pybee-briefcase and S3tree project.}{January 2018 - Present}
+    \resumeSubheading
+        {Elite Certification}{IIT Madras}
+        {Scored 79 percent in the introduction to modern application development course.}{June 2018}
+  \resumeSubHeadingListEnd
+
+\end{document}
+
